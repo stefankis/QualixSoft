@@ -1,0 +1,66 @@
+.hero-section-home {
+    height: 100vh;
+    background-image: url('/src/assets/images/background-hero-section-homepage.png');
+}
+
+/* Acasa.css */
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+  
+.fade-in {
+    opacity: 0; /* Pornește de la opacitate 0 */
+    animation: fadeIn 1s forwards; /* Animația durează 1s și rămâne la final */
+}
+
+.delay-1 {
+    animation-delay: 0s; /* Întârziere de 0.5s */
+}
+
+.delay-2 {
+    animation-delay: 0.5s; /* Întârziere de 1s */
+}
+
+.delay-3 {
+    animation-delay: 1s; /* Întârziere de 1.5s */
+}
+
+/* Acasa.css */
+
+.typing {
+    overflow: hidden;
+    white-space: nowrap;
+    animation: typing 2s steps(30, end) forwards;
+  }
+  
+  @keyframes typing {
+    from {
+      width: 0;
+    }
+    to {
+      width: 100%;
+    }
+  }
+  
+  /* Acasa.css */
+
+.slide-in-left {
+    transform: translateX(-100%); /* Pornește în afara ecranului, spre stânga */
+    opacity: 0; /* Inițial este invizibil */
+    animation: slideIn 1s ease forwards; /* Animația durează 1 secundă */
+    animation-delay: 2s;
+  }
+  
+  @keyframes slideIn {
+    to {
+      transform: translateX(0); /* Se deplasează în poziția finală */
+      opacity: 1; /* Devine complet vizibil */
+    }
+  }
+  
